@@ -11,7 +11,7 @@ class TreesController < ApplicationController
     end
 
     def create 
-        @tree = Tree.create(variety: params[:variety], bird_id: params[:bird.id])  #this isnt working, what the hell
+        @tree = Tree.create(variety: params[:variety], bird_id: params[:bird_id]) 
         render json: @tree
     end
 
